@@ -9,7 +9,7 @@ container.style.backgroundColor = "#3b743b";
 var section = document.querySelector('section');
 section.style.backgroundColor = "#3b743b"; 
 
-var imagenes = ["imagen/arnica.jpeg", 'imagen/aromaBlends.jpeg', 'imagen/calendulaPromo.jpeg', "imagen/enebro.jpeg", 'imagen/eucalipto.jpeg', 'imagen/eucasol.jpeg', "imagen/arnica.jpeg", 'imagen/gelParaManos.jpeg', 'imagen/jengibre.jpeg', 'imagen/neroli.jpg'];
+var imagenes = ["imagen/arnica.jpeg", 'imagen/aromaBlends.jpeg', 'imagen/calendulaPromo.jpeg', "imagen/enebro.jpeg", 'imagen/eucalipto.jpeg', 'imagen/eucasol.jpeg', "imagen/gelParaManos.jpeg", 'imagen/jengibre.jpeg', 'imagen/neroli.jpg'];
 
 function changeImage() {
     var seccion = document.querySelector('section');
@@ -34,17 +34,40 @@ function prevImage() {
     updateGalleryImage();
 }
 var imageDescriptions = [
-    "Esta es una descripción para el producto Arnica.",
-    "Esta es una descripción para el producto Aroma Blends.",
-    "Esta es una descripción para el producto Calendula Promo.",
-    "Esta es una descripción para el producto Enebro.",
-    "Esta es una descripción para el producto Eucalipto.",
-    "Esta es una descripción para el producto Eucasol.",
-    "Esta es una descripción para el producto Arnica.",
-    "Esta es una descripción para el producto Gel para manos.",
-    "Esta es una descripción para el producto Jengibre.",
-    "Esta es una descripción para el producto Neroli."
-];
+    //ARNICA
+    `<del>Precio de lista: $10300.</del>
+    Precio actual: $7725`,
+    // AROMA BLENDS
+    `<del>Precio de lista: $6385.</del>
+    Precio actual: $4790`,
+    //PROMO CREMA CORPORAL
+    `EDICION ESPECIAL!!
+    1 CREMA PARA CUERPO +
+    1 CREMA PARA LABIOS
+    PRECIO: $6500`,
+    //ENEBRO
+    `<del>Precio de lista: $11725.</del>
+    Precio actual: $8790`,
+    //ACEITE EUCALIPTO
+    `<del>Precio de lista: $7745.</del>
+    Precio actual: $7725`,
+    //EUCASOL 
+    `<del>Precio de lista: $7745.</del>
+    Precio actual: $5810`,
+    //GEL PARA MANOS
+    `<del>Precio de lista: $2990.</del>
+    Precio actual: $2242`,
+    //JENGIBRE
+    `<del>Precio de lista: $14885.</del>
+    Precio actual: $11163`,
+    // ACEITE NEROLI
+    `<del>Precio de lista: $11090.</del>
+    Precio actual: $8317`,
+  ];
+  
+  // Reemplaza todos los \n por <br> en cada elemento del array
+  imageDescriptions = imageDescriptions.map(description => description.replace(/\n/g, "<br>"));
+  
 function updateGalleryImage() {
     var seccion = document.querySelector('section');
     var imageUrl = imagenes[currentImageIndex];
@@ -53,6 +76,7 @@ function updateGalleryImage() {
 
     var imageDescription = document.getElementById("imageDescription");
     imageDescription.textContent = imageDescriptions[currentImageIndex];
+    imageDescription.innerHTML = imageDescriptions[currentImageIndex];
 }
 function openGallery() {
     var seccion = document.querySelector('section');
