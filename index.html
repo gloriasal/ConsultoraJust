@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+    <link rel="icon" type="image/png" href="imagen/popcorn.ico">
+    <title>Document</title>
+</head>
+
+<body onload="changeImage();">
+    <!-- Encabezado -->
+    <header>
+        <h1>JUST COSMÉTICOS</h1>
+    </header>
+    <div class="container">
+        <div class="container">
+            <section onclick="openGallery()">
+
+            </section><br>
+        </div>
+        <!--<div class="right">
+            <h2>Información importante</h2>
+            <p>Mantenete informado mediante nuestro sitio web y recibi la info por e-mail</p>
+        </div>-->
+    </div>
+    <div id="gallery" style="display: none;">
+        <!-- La galería inicialmente está oculta con display: none -->
+        <div class="closeBtn" onclick="closeGallery()">&times;</div>
+        <div id="imageDescription"></div>
+        <img id="expandedImg" src="">
+        <span class="arrow leftArrow" onclick="prevImage()">&#10094;</span>
+        <span class="arrow rightArrow" onclick="nextImage()">&#10095;</span>
+    </div>
+    <footer>
+        <form action="" id="formulario">
+            <label for="allColor">Color del Header, Body y Footer: </label>
+            <input type="color" id="allColor" oninput="changeAllColors()">
+            <label for="sectionColor">Color de la Sección: </label>
+            <input type="color" id="sectionColor" oninput="changeSectionColor()">
+        </form>
+    </footer>
+</body>
+
+</html>

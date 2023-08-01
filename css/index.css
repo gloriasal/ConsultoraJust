@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #aaaaaa;
+    margin: 0;
+    background-color: #903f97; /* Ajusta el color de fondo para que coincida con el footer */
+}
+
+div.container {
+    overflow: auto;
+}
+
+header {
+    background-color: #e5e5e5;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul {
+    padding-left: 0px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+    font-weight: 700;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+
+footer {
+    background-color: #422a2a;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 620px) {
+
+    nav,
+    main,
+    .right {
+        width: 100%;
+    }
+}
+
+h1,
+h2 {
+    color: #333333;
+}
+
+.container {
+    background-color: #3b743b;
+    color: #4e6063;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.right {
+    background-color: #cccccc;
+    color: #333333;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    height: 70vh;
+    transition: background-image 0.3s ease;
+    width: 100%;
+    /* Asegurar que la sección ocupe el 100% del ancho */
+}
+
+#gallery {
+    position: fixed;
+    /* Hacer que la galería se superponga a todo el contenido */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Agregar un fondo semitransparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Asegurar que la galería esté en la parte superior */
+}
+
+#expandedImg {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar para centrar tanto vertical como horizontalmente */
+}
+#imageDescription {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semitransparente */
+    z-index: 10001; /* Asegurar que la descripción esté encima de la imagen */
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    /* Asegurar que las flechas estén en la parte superior */
+}
+
+.leftArrow {
+    left: 20px;
+}
+
+.rightArrow {
+    right: 20px;
+}
+/* Estilos para el botón de cerrar */
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000; /* Asegurar que el botón de cerrar esté en la parte superior */
+}
+
+
+
+/* Para dispositivos móviles */
+@media only screen and (max-width: 620px) {
+
+    nav,
+    main,
+    .right {
+        width: 100%;
+    }
+
+    /* ... Estilos adicionales para dispositivos móviles si es necesario ... */
+}
+
+@media only screen and (max-width: 768px) {
+    #imageDescription {
+        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+}
