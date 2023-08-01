@@ -7,7 +7,7 @@ footer.style.backgroundColor = "#3b743b";
 container.style.backgroundColor = "#3b743b";
 
 var section = document.querySelector('section');
-section.style.backgroundColor = "#5f32a2"; 
+section.style.backgroundColor = "#3b743b"; 
 
 var imagenes = ["imagen/arnica.jpeg", 'imagen/aromaBlends.jpeg', 'imagen/calendulaPromo.jpeg', "imagen/enebro.jpeg", 'imagen/eucalipto.jpeg', 'imagen/eucasol.jpeg', "imagen/arnica.jpeg", 'imagen/gelParaManos.jpeg', 'imagen/jengibre.jpeg', 'imagen/neroli.jpg'];
 
