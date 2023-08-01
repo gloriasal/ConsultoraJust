@@ -2,12 +2,12 @@ var header = document.querySelector('header');
 var footer = document.querySelector('footer');
 var container = document.querySelector('.container');
 
-header.style.backgroundColor = "#5f32a2";
-footer.style.backgroundColor = "#5f32a2";
-container.style.backgroundColor = "#5f32a2";
+header.style.backgroundColor = "#3b743b";
+footer.style.backgroundColor = "#3b743b";
+container.style.backgroundColor = "#3b743b";
 
 var section = document.querySelector('section');
-section.style.backgroundColor = "#5f32a2"; // Puedes establecer el color que desees como predeterminado
+section.style.backgroundColor = "#5f32a2"; 
 
 var imagenes = ["imagen/arnica.jpeg", 'imagen/aromaBlends.jpeg', 'imagen/calendulaPromo.jpeg', "imagen/enebro.jpeg", 'imagen/eucalipto.jpeg', 'imagen/eucasol.jpeg', "imagen/arnica.jpeg", 'imagen/gelParaManos.jpeg', 'imagen/jengibre.jpeg', 'imagen/neroli.jpg'];
 
@@ -69,13 +69,13 @@ function closeGallery() {
     var gallery = document.getElementById("gallery");
 
     if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
-        // Dispositivos táctiles (touch)
+        // touch
         gallery.style.display = "none";
     } else {
-        // Dispositivos con ratón (click)
+        // click
         gallery.style.display = "none";
         var expandedImg = document.getElementById("expandedImg");
-        expandedImg.src = ""; // Limpiar la imagen expandida al cerrar la galería
+        expandedImg.src = ""; 
     }
 }
 
