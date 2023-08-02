@@ -9,7 +9,7 @@ container.style.backgroundColor = "#3b743b";
 var section = document.querySelector('section');
 section.style.backgroundColor = "#3b743b"; 
 
-var imagenes = ["imagen/arnica.jpeg", 'imagen/aromaBlends.jpeg', 'imagen/calendulaPromo.jpeg', "imagen/enebro.jpeg", 'imagen/eucalipto.jpeg', 'imagen/eucasol.jpeg', "imagen/gelParaManos.jpeg", 'imagen/jengibre.jpeg', 'imagen/neroli.jpg'];
+var imagenes = ["imagen/arnica.jpeg", 'imagen/aromaBlends.jpeg', 'imagen/calendulaPromo.jpeg', "imagen/enebro.jpeg", 'imagen/eucalipto.jpeg', 'imagen/eucasol.jpeg', "imagen/gelParaManos.jpeg", 'imagen/jengibre.jpeg', 'imagen/neroli.jpg','imagen/teatree.jpg'];
 
 function changeImage() {
     var seccion = document.querySelector('section');
@@ -50,10 +50,10 @@ var imageDescriptions = [
     Precio actual: $8790`,
     //ACEITE EUCALIPTO
     `<del>Precio de lista: $7745.</del>
-    Precio actual: $7725`,
-    //EUCASOL 
-    `<del>Precio de lista: $7745.</del>
     Precio actual: $5810`,
+    //EUCASOL 
+    `<del>Precio de lista: $13300.</del>
+    Precio actual: $9975`,
     //GEL PARA MANOS
     `<del>Precio de lista: $2990.</del>
     Precio actual: $2242`,
@@ -63,6 +63,9 @@ var imageDescriptions = [
     // ACEITE NEROLI
     `<del>Precio de lista: $11090.</del>
     Precio actual: $8317`,
+    // ACEITE TEA TREE
+    `<del>Precio de lista: $16075.</del>
+    Precio actual: $12050`,
   ];
   
   // Reemplaza todos los \n por <br> en cada elemento del array
