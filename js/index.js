@@ -35,13 +35,16 @@ function prevImage() {
 }
 var imageDescriptions = [
     //ARNICA
-    `<del>Precio de lista: $10300.</del>
+    `ARNICA
+    <del>Precio de lista: $10300.</del>
     Precio actual: $7725`,
     // AROMA BLENDS
-    `<del>Precio de lista: $6385.</del>
+    `AROMA BLENDS
+    <del>Precio de lista: $6385.</del>
     Precio actual: $4790`,
     //PROMO CREMA CORPORAL
     `EDICION ESPECIAL!!
+    CALÉNDULA
     1 CREMA PARA CUERPO +
     1 CREMA PARA LABIOS
     PRECIO: $6500`,
@@ -49,22 +52,29 @@ var imageDescriptions = [
     `<del>Precio de lista: $11725.</del>
     Precio actual: $8790`,
     //ACEITE EUCALIPTO
-    `<del>Precio de lista: $7745.</del>
+    `ACEITE CORPORAL EUCALIPTO
+    <del>Precio de lista: $7745.</del>
     Precio actual: $5810`,
     //EUCASOL 
-    `<del>Precio de lista: $13300.</del>
+    `EUCASOL SPRAY
+    <del>Precio de lista: $13300.</del>
     Precio actual: $9975`,
     //GEL PARA MANOS
-    `<del>Precio de lista: $2990.</del>
+    `GEL PARA MANOS
+    <del>Precio de lista: $2990.</del>
     Precio actual: $2242`,
     //JENGIBRE
-    `<del>Precio de lista: $14885.</del>
+    `AROMA CARE VITALITY
+    JENGIBRE
+    <del>Precio de lista: $14885.</del>
     Precio actual: $11163`,
     // ACEITE NEROLI
-    `<del>Precio de lista: $11090.</del>
+    `ACEITE NEROLI
+    <del>Precio de lista: $11090.</del>
     Precio actual: $8317`,
     // ACEITE TEA TREE
-    `<del>Precio de lista: $16075.</del>
+    `ACEITE TEA TREE
+    <del>Precio de lista: $16075.</del>
     Precio actual: $12050`,
   ];
   
