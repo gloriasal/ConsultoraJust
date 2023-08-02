@@ -73,9 +73,7 @@ var imageDescriptions = [
     <del>Precio de lista: $11090.</del>
     Precio actual: $8317`,
     // ACEITE TEA TREE
-    `ACEITE TEA TREE
-    <del>Precio de lista: $16075.</del>
-    Precio actual: $12050`,
+    `EDICION ESPECIAL! $7000`,
   ];
   
   // Reemplaza todos los \n por <br> en cada elemento del array
