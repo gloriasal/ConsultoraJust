@@ -49,7 +49,8 @@ var imageDescriptions = [
     1 CREMA PARA LABIOS
     PRECIO: $6500`,
     //ENEBRO
-    `<del>Precio de lista: $11725.</del>
+    `ENEBRO
+    <del>Precio de lista: $11725.</del>
     Precio actual: $8790`,
     //ACEITE EUCALIPTO
     `ACEITE CORPORAL EUCALIPTO
