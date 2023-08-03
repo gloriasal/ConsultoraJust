@@ -129,9 +129,9 @@ h2 {
     max-height: 100%;
     display: block;
     position: absolute;
-    top: 50%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Ajustar para centrar tanto vertical como horizontalmente */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     border-radius: 50px;
 }
 #imageDescription {
@@ -141,8 +141,8 @@ h2 {
     padding: 10px;
     color: white;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semitransparente */
-    z-index: 10001; /* Asegurar que la descripción esté encima de la imagen */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10001; 
 }
 .arrow {
     position: absolute;
@@ -152,7 +152,7 @@ h2 {
     color: white;
     cursor: pointer;
     z-index: 10000;
-    /* Asegurar que las flechas estén en la parte superior */
+    
 }
 
 .leftArrow {
@@ -162,7 +162,7 @@ h2 {
 .rightArrow {
     right: 20px;
 }
-/* Estilos para el botón de cerrar */
+
 .closeBtn {
     position: absolute;
     top: 10px;
@@ -170,12 +170,12 @@ h2 {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    z-index: 10000; /* Asegurar que el botón de cerrar esté en la parte superior */
+    z-index: 10000; 
 }
 
 
 
-/* Para dispositivos móviles */
+
 @media only screen and (max-width: 620px) {
 
     nav,
@@ -184,11 +184,11 @@ h2 {
         width: 100%;
     }
 
-    /* ... Estilos adicionales para dispositivos móviles si es necesario ... */
+    
 }
 
 @media only screen and (max-width: 768px) {
     #imageDescription {
-        font-size: 16px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        font-size: 16px; 
     }
 }
