@@ -39,7 +39,8 @@ var imageDescriptions = [
     <del>Precio de lista: $10300.</del>
     Precio actual: $7725`,
     // AROMA BLENDS
-    `AROMA BLENDS
+    `PRODUCTO AGOTADO
+    AROMA BLENDS
     <del>Precio de lista: $6385.</del>
     Precio actual: $4790`,
     //PROMO CREMA CORPORAL
@@ -70,7 +71,8 @@ var imageDescriptions = [
     <del>Precio de lista: $14885.</del>
     Precio actual: $11163`,
     // ACEITE NEROLI
-    `ACEITE NEROLI
+    `PRODUCTO AGOTADO
+    ACEITE NEROLI
     <del>Precio de lista: $11090.</del>
     Precio actual: $8317`,
     // ACEITE TEA TREE
